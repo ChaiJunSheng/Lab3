@@ -15,11 +15,16 @@ def bubble_sort(arr, sorting_order):
     if n < 10:
         # Traverse through all array elements
         for i in range(n - 1):
+            print("value of i")
+            print(i)
+
             # range(n) also work but outer loop will
             # repeat one time more than needed.
 
             # Last i elements are already in place
             for j in range(0, n - i - 1):
+                print("\nvalue of j")
+                print(j)
 
                 if sorting_order == SORT_ASCENDING:
                     if arr_result[j] > arr_result[j + 1]:
